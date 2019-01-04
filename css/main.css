@@ -19,7 +19,7 @@ body {
 .lft {
     float: left;
     width: 430px;
-    border: 1px solid red;
+    border: 0px solid red;
     margin-left: 60px;
 /*    margin-top: 76px;
 padding-right: 30px;*/
