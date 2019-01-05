@@ -151,3 +151,93 @@ h3 {
     font-size: 1.4em;
     margin-top: 1.3em;
 }
+
+.productRate {
+background: url(../tmp/stars.png);
+width: 550px;
+height: 30px;
+float: none;
+margin: 22px;
+/*z-index: 11;*/
+}
+.productRate div {
+/*display: none;*/
+background: url(../tmp/full-stars.png);
+width: 0;
+height: 100%;
+}
+.Rate {
+background: url(../tmp/stars.png);
+width: 550px;
+height: 30px;
+float: none;
+margin: 22px;
+/*z-index: 11;*/
+}
+.Rate div {
+/*display: none;*/
+background: url(../tmp/full-stars.png);
+width: 0;
+height: 100%;
+
+}
+
+
+/*sprite with stars*/
+Stars input:checked ~ label,
+#Stars label,
+#Stars label:hover,
+#Stars label:hover ~ label {
+background: url('../tmp/stars2.png') no-repeat;
+}
+#Stars {  /*fix floating problems*/
+  overflow: hidden;
+  *zoom: 1;  /*end of fix floating problems*/
+  position: relative;
+  /*float: left;*/
+}
+#Stars input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 43px;  height: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#Stars input:checked ~ label {
+  background-position: 0 -40px;
+  height: 40px;  width: 43px;
+}
+#Stars label {
+  background-position: 0 0;
+  height: 40px;  width: 43px;
+  float: left;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+#Stars label:hover,
+#Stars label:hover ~ label {
+  background-position: 0 -40px;
+  height: 40px;   width: 43px;
+}
+#Stars #star-0 {
+  left: 0px;
+}
+#Stars #star-1 {
+  left: 53px;
+}
+#Stars #star-2 {
+  left: 106px;
+}
+#Stars #star-3 {
+  left: 159px;
+}
+#Stars #star-4 {
+  left: 212px;
+}
+#Stars #star-5 {
+  left: 265px;
+}
+
